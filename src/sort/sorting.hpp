@@ -86,6 +86,42 @@ namespace structure {
     void mergeSort(T* array, unsigned int n) {
         mergeSort(array, 0, n);
     }
+    template <typename T>
+    T get_pivot(T *array, unsigned int first, unsigned int second){
+        unsigned int center = (second + first) / 2 ;
+        if (array[center] >= (array[first] && array[center] <= array[second - 1]) || (array[center] <= array[first] && array[center] >= array[second - 1])) {
+            return array[center];
+        } else if (array[first] >= (array[center] && array[first] <= array[second - 1] ) || (array[first] <= array[center] && array[first] >= array[second - 1])) {
+            return array[first];
+        } else {
+            return array[second - 1];
+        }
+    }
+
+    template <typename T>
+    void quickSort(T* array, unsigned int n) {
+        if (n < 2) {
+            return;
+        }
+        T pivot = get_pivot(array, 0, n);
+        int i = 0, j= 0;
+        for (i = 0, j = n-1 ;; ++i, --j) {
+            while(array[i] < pivot) {
+                i++;
+            }
+            while(array[j] > pivot) {
+                j--;
+            }
+            if (i >= j ) {
+                break;
+            }
+            swap(array, i, j);
+        }
+        quickSort(array, i);
+        quickSort(array + i, n - i);
+
+
+    }
 
 }
 #endif //DATASTRUCTURED_SORTING_H
