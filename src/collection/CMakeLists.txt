@@ -4,11 +4,12 @@ project(DataStructured)
 add_definitions(-std=c++11)
 
 set(HEADER_FILES
-        sorting.hpp
+        SinglyLinkedList.hpp
+        SingleNode.hpp
         )
 
 set(SOURCE_FILES
-        sorting.cpp
+        SinglyLinkedList.cpp
         )
 
-add_library(sorting STATIC ${SOURCE_FILES} ${HEADER_FILES})
+add_library(collection STATIC ${SOURCE_FILES} ${HEADER_FILES})

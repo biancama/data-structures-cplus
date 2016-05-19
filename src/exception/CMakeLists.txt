@@ -4,11 +4,10 @@ project(DataStructured)
 add_definitions(-std=c++11)
 
 set(HEADER_FILES
-        sorting.hpp
+        IndexOutOfBoundsException.h
         )
 
 set(SOURCE_FILES
-        sorting.cpp
         )
 
-add_library(sorting STATIC ${SOURCE_FILES} ${HEADER_FILES})
+add_library(exception STATIC ${SOURCE_FILES} ${HEADER_FILES})
