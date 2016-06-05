@@ -9,7 +9,6 @@
 namespace structure {
     template <class T>
     class SingleNode {
-    private:
     public:
         const T& getElem() const {
             return elem;

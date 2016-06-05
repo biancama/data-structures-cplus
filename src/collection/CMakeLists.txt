@@ -6,6 +6,8 @@ add_definitions(-std=c++11)
 set(HEADER_FILES
         SinglyLinkedList.hpp
         SingleNode.hpp
+        DoubleNode.hpp
+        DoublyLinkedList.hpp
         )
 
 set(SOURCE_FILES

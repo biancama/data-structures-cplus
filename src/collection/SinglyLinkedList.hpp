@@ -2,8 +2,8 @@
 // Created by Massimo Biancalani on 14/05/16.
 //
 
-#ifndef DATASTRUCTURED_LIST_H
-#define DATASTRUCTURED_LIST_H
+#ifndef DATASTRUCTURED_SINGLY_LIST_H
+#define DATASTRUCTURED_SINGLY_LIST_H
 
 #include "SingleNode.hpp"
 #include "../exception/IndexOutOfBoundsException.h"
@@ -138,4 +138,4 @@ void structure::SinglyLinkedList<T>::removeFirst() {
 }
 
 
-#endif //DATASTRUCTURED_LIST_H
+#endif //DATASTRUCTURED_SINGLY_LIST_H
