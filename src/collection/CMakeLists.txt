@@ -11,7 +11,7 @@ set(HEADER_FILES
         )
 
 set(SOURCE_FILES
-        SinglyLinkedList.cpp
+        Collection.cpp
         )
 
 add_library(collection STATIC ${SOURCE_FILES} ${HEADER_FILES})

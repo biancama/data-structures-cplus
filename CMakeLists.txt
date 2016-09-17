@@ -12,8 +12,9 @@ add_executable(structure_run ${SOURCE_FILES})
 
 include_directories(src/sort)
 include_directories(src/collection)
+include_directories(src/stack)
 
 add_subdirectory(src)
 add_subdirectory(test)
 
-target_link_libraries(structure_run sorting collection)
+target_link_libraries(structure_run sorting collection stack)

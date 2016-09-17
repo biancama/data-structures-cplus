@@ -3,4 +3,4 @@ project(DataStructured_tests)
 
 add_subdirectory(sort)
 add_subdirectory(collection)
-
+add_subdirectory(stack)

@@ -4,5 +4,6 @@ project(DataStructured)
 add_subdirectory(sort)
 add_subdirectory(collection)
 add_subdirectory(exception)
+add_subdirectory(stack)
 
 
